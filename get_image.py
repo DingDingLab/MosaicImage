@@ -1,9 +1,8 @@
-import sys, os, random, argparse
+import os
 from PIL import Image
-import imghdr
 import numpy as np
 
-def getImage(imageDir):
+def get_image(imageDir):
     """把图片库里的图片筛选并放入一个列表里面"""
 
     # 读取一个文件夹中的所有文件和子文件夹名称，返回一个列表
@@ -24,5 +23,6 @@ def getImage(imageDir):
             print("不支持的文件: %s" % (filePath,))
     return images
 
-result = getImage("img_lib_noise")
-print(result)
+if __name__ == "__main__":
+    result = getImage("img_lib_noise")
+    print(result)
