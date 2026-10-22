@@ -6,9 +6,12 @@ dist/
 wheels/
 *.egg-info
 
+
 # Virtual environments
 .venv
 
 # img
 img_lib_noise/
 test_1.png
+
+.vscode/
