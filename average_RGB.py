@@ -1,4 +1,3 @@
-
 import numpy as np
 
 def average_RGB(image):
